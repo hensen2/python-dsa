@@ -1,16 +1,19 @@
+"""An array implementation of the stack abstract data type that is a collection of elements with 
+the following principal operations: push(), pop(), peek(), is_empty(), is_full(), size(), contains().
+The order in which elements come off of a stack are Last In, First Out (LIFO).
+"""
 
 
 class StackOverflowError(BaseException):
     pass
 
-
 class StackUnderflowError(BaseException):
     pass
 
 
-class ArrayStack:
+class Stack:
 
-    def __init__(self, limit=10):
+    def __init__(self, limit = 10):
         self.stack = []
         self.limit = limit
 
