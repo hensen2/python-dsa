@@ -1,0 +1,2 @@
+class DynamicArraySeq:
+    pass

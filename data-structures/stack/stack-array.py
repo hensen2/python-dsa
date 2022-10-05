@@ -7,13 +7,14 @@ The order in which elements come off of a stack are Last In, First Out (LIFO).
 class StackOverflowError(BaseException):
     pass
 
+
 class StackUnderflowError(BaseException):
     pass
 
 
 class Stack:
 
-    def __init__(self, limit = 10):
+    def __init__(self, limit=10):
         self.stack = []
         self.limit = limit
 
